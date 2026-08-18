@@ -268,12 +268,12 @@ Analytics Engineer | AI Platform Architect
 
 Dual MS degrees in Strategic Analytics (Brandeis University) and Mathematical Modeling (University of Dar es Salaam). 13+ years at the intersection of data, education, and technology. Builder of production analytics infrastructure, AI-powered platforms, and governed data systems.
 
-- 🔗 GitHub: [@emkwambe](https://github.com/emkwambe)
+- 🔗 GitHub: [@emkwambe](https://github.com/emkwambe)'
 - 💼 LinkedIn: [linkedin.com/in/emkwambe](https://linkedin.com/in/emkwambe)
 - 📧 Email: emkwambe1@gmail.com
 - 🌐 Portfolio: [realitydb.dev](https://realitydb.dev)
 
----
+
 
 ## 📄 License
 
