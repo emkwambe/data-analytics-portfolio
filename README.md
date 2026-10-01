@@ -126,16 +126,11 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ## 🏗️ Production Data Platforms
 
-Beyond analytical projects, I design and build production data infrastructure:
-
-### [RealityDB](https://realitydb.dev) — Synthetic Data & Analytics Infrastructure
-Enterprise platform for production-grade synthetic data generation, simulation, and workforce training. 60+ CLI commands distributed through npm. Schema-faithful synthetic data for banking, healthcare, and insurance domains. Semantic data models ensuring consistent interpretation across CLI, Studio, Sandbox, and SimLab environments. H9 streaming SQL engine processing 5M rows in 34 seconds.
-
 ### [PipelineKit](https://github.com/emkwambe/pipelinekit) — Data Pipeline Governance
 CLI-based data pipeline coordination layer with data contract framework, quality monitoring, governance model, and anomaly detection. 581 tests across 23 sprints. First end-to-end run: 6,200 rows, 90/100 quality score.
 
 ### [SafeSQL Pro](https://safesqlpro.dev) — AI-Powered SQL Validation
-Three-layer SQL validation: deterministic AST detection (36 rules), Claude API explanation, PGlite in-browser proof engine. 334 tests. Production billing via Stripe.
+Three-layer SQL validation: deterministic detection (36 rules), Claude API explanation, PGlite in-browser proof engine. 
 
 ---
 
