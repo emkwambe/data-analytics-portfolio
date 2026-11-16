@@ -126,9 +126,6 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ## 🏗️ Production Data Platforms
 
-### [PipelineKit](https://github.com/emkwambe/pipelinekit) — Data Pipeline Governance
-CLI-based data pipeline coordination layer with data contract framework, quality monitoring, governance model, and anomaly detection. 581 tests across 23 sprints. First end-to-end run: 6,200 rows, 90/100 quality score.
-
 ### [SafeSQL Pro](https://safesqlpro.dev) — AI-Powered SQL Validation
 Three-layer SQL validation: deterministic detection (36 rules), Claude API explanation, PGlite in-browser proof engine. 
 
