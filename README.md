@@ -15,7 +15,7 @@
 
 ## 🎯 Portfolio Overview
 
-This portfolio showcases **5 end-to-end analytics projects** and **3 production data platforms** relevant to fintech, payments, financial services, and enterprise AI. Each project demonstrates the full analytics lifecycle: business question → data acquisition → modeling → validation → visualization → actionable insights.
+This portfolio showcases **6 end-to-end analytics projects** and **a production data platform** relevant to fintech, payments, financial services, and enterprise AI. Each project demonstrates the full analytics lifecycle: business question → data acquisition → modeling → validation → visualization → actionable insights.
 
 ![Executive Summary](visualizations/viz_executive_summary.png)
 
@@ -23,7 +23,38 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ## 📁 Analytics Projects
 
-### 1️⃣ [Subscription Fatigue Index](projects/01-subscription-fatigue)
+### 1️⃣ Consumer Credit Lab — Lending Portfolio Simulator 🆕
+
+**Question:** Would a consumer lender's credit models hold up under the tests a model-risk team runs?
+
+| Metric | Value |
+|--------|-------|
+| Data Sources | A solar lender's public SEC XBRL filings + Federal Reserve rate series (real); 10,000 loans simulated and calibrated to the lender's 10-K |
+| Models | Logistic regression vs XGBoost probability of default, SHAP reason codes |
+| Key Finding | Defaults reached **573 vs 250 expected** while the standard drift metric (PSI) stayed flat |
+
+![Consumer Credit Lab highlights](visualizations/viz_credit_lab_highlights.png)
+
+**How the data was obtained**
+- **Public record:** SEC XBRL filings snapshotted with SHA-256 hashes, a written deduplication rule, and 45 hand-extracted values, each with a page reference. Gaps are listed, never estimated.
+- **Before cleaning:** the same facts repeated across 10-K and 10-Q filings, and no Q4 figures reported directly.
+- **After cleaning:** one reconciled quarterly table, with Q4 derived from annual totals and tests that tie every quarter back to the annual figure.
+- **Loan level:** synthetic borrowers calibrated to the 10-K's loan sizes and credit profile, labelled as simulated throughout.
+
+**What testing the models revealed**
+- **Honest benchmarking:** XGBoost beat logistic regression by only AUC 0.640 vs 0.631, against a best possible 0.650, and the gain is reported as too small to matter.
+- **Explainable reasons:** a materiality threshold on SHAP reason codes cut false reasons on clean loans from **41.8% to 4.1%**.
+- **Selection bias:** a model trained only on approved loans would choose a book costing **$7.06M**, against the policy's **$4.41M**.
+- **Conceptual soundness:** a challenger's $743K expected-loss saving came from fraud built into the simulation, so it is reported as an upper bound.
+- **Rate risk:** loans priced at approval and sold later lose their margin after a rate rise of about 113 bps before sale.
+
+**Skills:** Credit risk modeling, model validation testing, drift monitoring, fairness testing, Python, JavaScript, statistical testing
+
+[📂 View Code →](https://github.com/emkwambe/case-explorer) · Live demo available on request
+
+---
+
+### 2️⃣ [Subscription Fatigue Index](projects/01-subscription-fatigue)
 
 **Question:** At what point does subscription saturation predict financial stress?
 
@@ -39,7 +70,7 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ---
 
-### 2️⃣ [Financial Literacy–Debt Nexus](projects/02-financial-literacy)
+### 3️⃣ [Financial Literacy–Debt Nexus](projects/02-financial-literacy)
 
 **Question:** Which *specific* financial literacy gaps most predict problematic debt?
 
@@ -57,7 +88,7 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ---
 
-### 3️⃣ [Small Business Payment Velocity Index](projects/03-payment-velocity)
+### 4️⃣ [Small Business Payment Velocity Index](projects/03-payment-velocity)
 
 **Question:** Can B2B payment timing predict economic health 60–90 days ahead?
 
@@ -73,7 +104,7 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ---
 
-### 4️⃣ [FinHealth Data Warehouse (dbt)](https://github.com/emkwambe/finhealth-warehouse-dbt)
+### 5️⃣ [FinHealth Data Warehouse (dbt)](https://github.com/emkwambe/finhealth-warehouse-dbt)
 
 **Question:** How do we build a production-grade analytics pipeline for financial health scoring?
 
@@ -95,7 +126,7 @@ This portfolio showcases **5 end-to-end analytics projects** and **3 production 
 
 ---
 
-### 5️⃣ [AI Readiness & ROI Simulator](https://github.com/emkwambe/ai-readiness-roi-simulator)
+### 6️⃣ [AI Readiness & ROI Simulator](https://github.com/emkwambe/ai-readiness-roi-simulator)
 
 **Question:** How do organizations systematically decide which processes to automate with AI — beyond vendor hype and executive intuition?
 
@@ -167,6 +198,7 @@ Each project was designed with **actionable business applications**:
 
 | Project | Business Application |
 |---------|---------------------|
+| Consumer Credit Lab | Model risk management, credit model validation, loss forecasting, rate-risk on loan pipelines |
 | Subscription Fatigue | Credit risk modeling, subscription churn prediction, responsible lending |
 | Financial Literacy | Targeted education programs, underwriting feature engineering |
 | Payment Velocity | Economic forecasting, B2B credit decisions, market timing |
@@ -259,14 +291,10 @@ All projects use **publicly available, verified datasets**:
 Analytics Engineer | AI Platform Architect
  MS degrees in Strategic Analytics (Brandeis University) and Mathematical Modeling (University of Dar es Salaam). 13+ years at the intersection of data, education, and technology. Builder of production analytics infrastructure, AI-powered platforms, and governed data systems.
 
-- 🔗 GitHub: [@emkwambe](https://github.com/emkwambe)'
-- 💼 LinkedIn: [linkedin.com/in/emkwambe](https://linkedin.com/in/emkwambe)
+- 🔗 GitHub: [@emkwambe](https://github.com/emkwambe)
+- 💼 LinkedIn: [linkedin.com/in/eddymkwambe](https://linkedin.com/in/eddymkwambe)
 - 📧 Email: emkwambe1@gmail.com
 - 🌐 Portfolio: https://github.com/emkwambe/data-analytics-portfolio
-
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-❯
-
 
 
 ## 📄 License
