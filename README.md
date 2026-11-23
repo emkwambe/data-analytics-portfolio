@@ -8,7 +8,7 @@
 [![BigQuery](https://img.shields.io/badge/BigQuery-Production-4285F4?logo=google-cloud)](https://cloud.google.com/bigquery)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**Author:** Eddy Mkwambe
+**Author:** Eddy Mkwambe · [eddymkwambe.vercel.app](https://eddymkwambe.vercel.app)
 **Focus:** Analytics Engineering | Financial Services | AI-Powered Decision Science | Semantic Layer Design
 
 ---
@@ -50,7 +50,7 @@ This portfolio showcases **6 end-to-end analytics projects** and **a production 
 
 **Skills:** Credit risk modeling, model validation testing, drift monitoring, fairness testing, Python, JavaScript, statistical testing
 
-[📂 View Code →](https://github.com/emkwambe/case-explorer) · Live demo available on request
+[🔗 Live Demo →](https://emkwambe.github.io/case-explorer) · [📂 View Code →](https://github.com/emkwambe/case-explorer)
 
 ---
 
@@ -294,7 +294,7 @@ Analytics Engineer | AI Platform Architect
 - 🔗 GitHub: [@emkwambe](https://github.com/emkwambe)
 - 💼 LinkedIn: [linkedin.com/in/eddymkwambe](https://linkedin.com/in/eddymkwambe)
 - 📧 Email: emkwambe1@gmail.com
-- 🌐 Portfolio: https://github.com/emkwambe/data-analytics-portfolio
+- 🌐 Portfolio site: [eddymkwambe.vercel.app](https://eddymkwambe.vercel.app)
 
 
 ## 📄 License
